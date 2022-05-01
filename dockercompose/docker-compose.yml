@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  front:
+    image: "mikasa0606/react-albums:v1"
+    ports:
+      - "8080:80"
+  back:
+    image: "mikasa0606/albums_json:v1"
+    ports: 
+      - "3000:80"
